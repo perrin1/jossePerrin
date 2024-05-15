@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Medecin</title>
+    <title>FAGC-Médecin pour tous</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -70,19 +70,21 @@
                         440 médecins généralistes
                         de la région de Charleroi</h1>
                     <p class="mt-6 text-gray-500 dark:text-gray-300"> Touvez un medeci ou que vous soyez </p>
-                    <button
-                        class="mt-6 rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto">Commencer
-                        maintenant
-                    </button>
+                    
+                    <a href="#medecin-generaliste">
+                        <button
+                            class="mt-6 rounded-lg bg-blue-600 px-6 py-2.5 text-center text-sm font-medium capitalize leading-5 text-white hover:bg-blue-500 focus:outline-none lg:mx-0 lg:w-auto">Commencer
+                            maintenant
+                        </button>
+                    </a>
 
                 </div>
 
                 <div class="mt-10 flex justify-center">
 
-
-                    <div id="carousel-example" class="relative w-full">
+                    <div id="carousel-example" class="relative h-1/2 w-full">
                         <!-- Carousel wrapper -->
-                        <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <div class="relative h-96 overflow-hidden rounded-lg  xl:h-80 2xl:h-96">
                             <!-- Item 1 -->
                             <div id="carousel-item-1" class="hidden duration-700 ease-in-out">
                                 <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
@@ -91,19 +93,19 @@
                             </div>
                             <!-- Item 2 -->
                             <div id="carousel-item-2" class="hidden duration-700 ease-in-out">
-                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                                <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1191&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                                     alt="..." />
                             </div>
                             <!-- Item 3 -->
                             <div id="carousel-item-3" class="hidden duration-700 ease-in-out">
-                                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
+                                <img src="https://images.unsplash.com/photo-1589279003513-467d320f47eb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                                     alt="..." />
                             </div>
                             <!-- Item 4 -->
                             <div id="carousel-item-4" class="hidden duration-700 ease-in-out">
-                                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                <img src="https://media.istockphoto.com/id/1548203309/fr/photo/le-m%C3%A9decin-remplit-les-documents-de-lenqu%C3%AAte-m%C3%A9dicale-et-coche-les-cases-%C3%A0-cocher.webp?b=1&s=170667a&w=0&k=20&c=8zUeVwLZIcZ-f7rw9jrwLpwdOEzT2p_RkHLdC7vluKA="
                                     class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
                                     alt="..." />
                             </div>
@@ -145,53 +147,7 @@
                                 <span class="hidden">Next</span>
                             </span>
                         </button>
-                    </div>
-
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function() {
-                            // Définir l'index initial de la diapositive
-                            let slideIndex = 0;
-
-                            // Fonction pour afficher la diapositive suivante
-                            function showNextSlide() {
-                                // Masquer toutes les diapositives
-                                let slides = document.querySelectorAll(".duration-700");
-                                for (let i = 0; i < slides.length; i++) {
-                                    slides[i].classList.add("hidden");
-                                }
-
-                                // Mettre à jour l'index de la diapositive
-                                slideIndex++;
-                                if (slideIndex >= slides.length) {
-                                    slideIndex = 0;
-                                }
-
-                                // Afficher la diapositive suivante
-                                slides[slideIndex].classList.remove("hidden");
-
-                                // Mettre à jour les indicateurs de diapositive
-                                updateSlideIndicators();
-                            }
-
-                            // Fonction pour mettre à jour les indicateurs de diapositive
-                            function updateSlideIndicators() {
-                                // Masquer tous les indicateurs de diapositive
-                                let indicators = document.querySelectorAll(".carousel-indicators button");
-                                for (let i = 0; i < indicators.length; i++) {
-                                    indicators[i].setAttribute("aria-current", "false");
-                                }
-
-                                // Mettre à jour l'indicateur de diapositive actuel
-                                indicators[slideIndex].setAttribute("aria-current", "true");
-                            }
-
-                            // Appel de la fonction showNextSlide toutes les 5 secondes (3000 millisecondes)
-                            setInterval(showNextSlide, 4000);
-                        });
-                    </script>
-
-                    {{-- <img class="h-96 w-full rounded-xl object-cover lg:w-4/5"
-                        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" /> --}}
+                    </div>                   
                 </div>
             </div>
         </section>
@@ -236,18 +192,11 @@
                 </div>
             </div>
         </section>
-        {{-- @php
-            
-            $data = Session::get('filtered_data');
-        $localites = Session::get('filtered_localites');
-        @endphp --}}
-
-
-
+      
         <section class="bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6 py-10">
                 <div class="text-center">
-                    <h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">Trouver un
+                    <h1 id="medecin-generaliste" class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">Trouver un
                         médecin généraliste
                     </h1>
 
@@ -255,9 +204,7 @@
 
                 <div class="">
                     <form action="/submit" method="post" class="mt-8 mb-6 grid grid-cols-1 gap-4 md:grid-cols-5">
-                        @csrf
-                        <!-- Ajoutez cette ligne si vous utilisez Laravel pour protéger votre formulaire contre les attaques CSRF -->
-
+                        @csrf                     
                         <div class="mt-4">
 
                             <input type="text" id="input1" name="nom"
@@ -286,7 +233,7 @@
 
                         <div class="mt-4">
                             <button type="submit"
-                                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Soumettre</button>
+                                class="bg-blue-500 text-white p-4   rounded-lg hover:bg-blue-600">Rechercher</button>
                         </div>
                     </form>
 
@@ -297,7 +244,7 @@
                     <div
                         class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4">
                         <div class="relative">
-                            <select id="Selectbon"
+                            {{-- <select id="Selectbon"
                                 class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                                 <option value="10">10</option>
                                 <option value="20">20</option>
@@ -311,7 +258,7 @@
                                         d="M10 12a1 1 0 0 1 .707.293l3 3a1 1 0 1 1-1.414 1.414l-2.293-2.293v7a1 1 0 0 1-2 0v-7l-2.293 2.293a1 1 0 1 1-1.414-1.414l3-3A1 1 0 0 1 10 12z"
                                         clip-rule="evenodd" />
                                 </svg>
-                            </div>
+                            </div> --}}
                         </div>
 
 
@@ -338,78 +285,71 @@
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Nom
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="nom" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Prenom
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="prenom" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Rue
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="rue" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Code Postal
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="code" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Commune
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="commune" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         Telephone
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="telephone" class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
                                 <th scope="col" class="px-6 py-3">
                                     <div class="flex items-center">
                                         En savoir plus
-                                        <a href="#"><svg class="w-3 h-3 ms-1.5" aria-hidden="true"
-                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                                viewBox="0 0 24 24">
-                                                <path
-                                                    d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
-                                            </svg></a>
+                                        <svg id="melange" hidden class="w-3 h-3 ms-1.5 cursor-pointer" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M8.574 11.024h6.852a2.075 2.075 0 0 0 1.847-1.086 1.9 1.9 0 0 0-.11-1.986L13.736 2.9a2.122 2.122 0 0 0-3.472 0L6.837 7.952a1.9 1.9 0 0 0-.11 1.986 2.074 2.074 0 0 0 1.847 1.086Zm6.852 1.952H8.574a2.072 2.072 0 0 0-1.847 1.087 1.9 1.9 0 0 0 .11 1.985l3.426 5.05a2.123 2.123 0 0 0 3.472 0l3.427-5.05a1.9 1.9 0 0 0 .11-1.985 2.074 2.074 0 0 0-1.846-1.087Z" />
+                                        </svg>
                                     </div>
                                 </th>
 
@@ -418,34 +358,45 @@
                         <tbody>
 
                             @if (session('filtered_data') || session('filtered_localites'))
-                                <!-- Afficher les données filtrées -->
-                                @foreach (session('filtered_data') as $items)
-                                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                        <td scope="row"
-                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                            {{ $items->nom }}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{ $items->prenom }}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{ $items->rue }}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{ $items->codepostal }}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{ $items->localite }}
-                                        </td>
-                                        <td class="px-6 py-4">
-                                            {{ $items->telephone }}
-                                        </td>
-                                        <td class="px-6 py-4 text-center">
-                                            <a href="#"
-                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                @if (session('filtered_data') && session('filtered_data')->count() > 0)
+                                    @foreach (session('filtered_data') as $items)
+                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                            <td scope="row"
+                                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                {{ $items->nom }}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {{ $items->prenom }}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {{ $items->rue }}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {{ $items->codepostal }}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {{ $items->localite }}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {{ $items->telephone }}
+                                            </td>
+                                            <td class="px-6 py-4 text-center">
+                                                 <button
+                                                    onclick="openModal('{{ $items->nom }}','{{ $items->prenom }}', '{{ $items->rue }}' , '{{ $items->telephone }}', '{{ $items->localite }}' )"
+                                                    class="font-medium text-white py-2 px-4 rounded-lg bg-blue-600 dark:text-blue-500">
+                                                    En savoir plus
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                @else
+                                    <tr>
+                                        <td colspan="7"
+                                            class="px-6 py-4 text-center text-gray-500 dark:text-gray-400">
+                                            Aucun résultat trouvé.
                                         </td>
                                     </tr>
-                                @endforeach
+                                @endif
                             @else
                                 @foreach ($data as $items)
                                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -469,44 +420,131 @@
                                             {{ $items->telephone }}
                                         </td>
                                         <td class="px-6 py-4 text-center">
-                                            <a href="#"
-                                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                             <button
+                                                    onclick="openModal('{{ $items->nom }}','{{ $items->prenom }}', '{{ $items->rue }}' , '{{ $items->telephone }}', '{{ $items->localite }}' )"
+                                                    class="font-medium text-white py-2 px-4 rounded-lg bg-blue-600 dark:text-blue-500">
+                                                    En savoir plus
+                                                </button>
                                         </td>
                                     </tr>
                                 @endforeach
                             @endif
 
-                            {{-- @foreach ($data as $items)
-                                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                    <td scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        {{ $items->nom }}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{ $items->prenom }}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{ $items->rue }}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{ $items->codepostal }}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{ $items->localite }}
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        {{ $items->telephone }}
-                                    </td>
-                                    <td class="px-6 py-4 text-center">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
-                                </tr>
-                            @endforeach --}}
 
 
                         </tbody>
                     </table>
+                    <!-- Modal -->
+
+                    <div id="editModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+                        <div
+                            class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                                <div class="absolute inset-0 bg-transparent opacity-75"></div>
+                            </div>
+
+                            <!-- This element is to trick the browser into centering the modal contents. -->
+                            <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                                aria-hidden="true">&#8203;</span>
+
+                            <div
+                                class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full">
+                                <div class="bg-white px-6 pt-6 pb-4 sm:p-8 sm:pb-6">
+                                    <div class="sm:flex sm:items-start">
+                                        <div class="w-full">
+
+                                            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                                <h3 class="text-3xl mb-4 font-bold leading-6  text-gray-900"
+                                                    id="modal-title">
+                                                    Dr <span class="ms-1 font-bold  " id="modal-nom"></span> <span
+                                                        class="ms-3 font-bold  " id="modal-prenom"></span>
+                                                </h3>
+                                                <hr class=" w-full border-gray-200 dark:border-gray-700 " />
+
+                                                <div class="mt-4 p-4">
+                                                    <p class="text-lg mb-2 text-gray-700">
+                                                        <span class="ms-5 font-bold text-md "
+                                                            id="modal-localite"></span>
+                                                    </p>
+                                                    <p class="text-lg mb-2 text-gray-700">
+                                                        <span class="ms-5 font-bold text-md " id="modal-rue"></span>
+                                                    </p>
+                                                    <p class="text-lg mb-2 text-gray-700">
+                                                        <span class="ms-5 font-bold text-md "
+                                                            id="modal-telephone"></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-100 px-6 py-2 sm:px-8 sm:flex sm:flex-row-reverse">
+                                    <button type="button" onclick="closeModal()"
+                                        class="w-full inline-flex justify-center rounded-lg border border-transparent shadow-sm px-6 py-3 bg-blue-600 text-lg font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:ml-3 sm:w-auto sm:text-lg">
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        let sortOrder = {}; // Objet pour stocker l'état de tri de chaque colonne
+                        // Récupérer toutes les balises <tr> du tableau, à l'exception de la première (l'entête)
+                        const rows = Array.from(document.querySelectorAll('table tbody tr'));
+                    
+                        // Ajouter des écouteurs d'événements à chaque SVG
+                        document.querySelectorAll('svg').forEach(svg => {
+                            svg.addEventListener('click', () => {
+                                const columnId = svg.getAttribute('id'); // Récupérer l'ID de la colonne
+                                const columnIndex = Array.from(svg.parentNode.parentNode.parentNode.children).findIndex(th => th.querySelector('svg') === svg); // Récupérer l'index de la colonne
+                    
+                                // Trier les lignes en fonction de la colonne cliquée
+                                rows.sort((rowA, rowB) => {
+                                    const valueA = rowA.children[columnIndex].textContent.trim();
+                                    const valueB = rowB.children[columnIndex].textContent.trim();
+                    
+                                    // Utiliser le bon type de tri en fonction de la colonne
+                                    if (columnId === 'melange') {
+                                        return sortOrder[columnId] === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
+                                    } else {
+                                        return sortOrder[columnId] === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
+                                    }
+                                });
+                    
+                                // Inverser l'ordre de tri pour la prochaine fois que l'utilisateur clique sur la colonne
+                                sortOrder[columnId] = sortOrder[columnId] === 'asc' ? 'desc' : 'asc';
+                    
+                                // Effacer le contenu actuel du tableau
+                                document.querySelector('table tbody').innerHTML = '';
+                    
+                                // Réinsérer les lignes triées dans le tableau
+                                rows.forEach(row => {
+                                    document.querySelector('table tbody').appendChild(row);
+                                });
+                            });
+                        });
+                    </script>
+                    
+                    
+                    
+
+                    <script>
+                        function openModal(nom, prenom, rue, telephone, localite) {
+                            document.getElementById('modal-nom').innerText = nom;
+                            document.getElementById('modal-prenom').innerText = prenom;
+                            document.getElementById('modal-rue').innerText = rue;
+                            document.getElementById('modal-telephone').innerText = telephone;
+                            document.getElementById('modal-localite').innerText = localite;
+
+                            document.getElementById('editModal').classList.remove('hidden');
+                        }
+
+                        function closeModal() {
+                            document.getElementById('editModal').classList.add('hidden');
+                        }
+                    </script>
 
 
                     <div class="flex justify-center my-8">
@@ -574,7 +612,6 @@
                                     </a>
                                 @endif
                             </nav> --}}
-                           
                         @else
                             <nav class="inline-flex">
                                 <a href="{{ $data->previousPageUrl() }}"
@@ -635,11 +672,50 @@
 
                 </div>
 
-
-
-
             </div>
 
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    // Définir l'index initial de la diapositive
+                    let slideIndex = 0;
+
+                    // Fonction pour afficher la diapositive suivante
+                    function showNextSlide() {
+                        // Masquer toutes les diapositives
+                        let slides = document.querySelectorAll(".duration-700");
+                        for (let i = 0; i < slides.length; i++) {
+                            slides[i].classList.add("hidden");
+                        }
+
+                        // Mettre à jour l'index de la diapositive
+                        slideIndex++;
+                        if (slideIndex >= slides.length) {
+                            slideIndex = 0;
+                        }
+
+                        // Afficher la diapositive suivante
+                        slides[slideIndex].classList.remove("hidden");
+
+                        // Mettre à jour les indicateurs de diapositive
+                        updateSlideIndicators();
+                    }
+
+                    // Fonction pour mettre à jour les indicateurs de diapositive
+                    function updateSlideIndicators() {
+                        // Masquer tous les indicateurs de diapositive
+                        let indicators = document.querySelectorAll(".carousel-indicators button");
+                        for (let i = 0; i < indicators.length; i++) {
+                            indicators[i].setAttribute("aria-current", "false");
+                        }
+
+                        // Mettre à jour l'indicateur de diapositive actuel
+                        indicators[slideIndex].setAttribute("aria-current", "true");
+                    }
+
+                    // Appel de la fonction showNextSlide toutes les 5 secondes (3000 millisecondes)
+                    setInterval(showNextSlide, 4000);
+                });
+            </script>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
                     const searchInput = document.getElementById("table-search");
@@ -681,34 +757,43 @@
 
                 });
             </script>
+            <script>
+                // Fonction pour envoyer une requête POST pour vider les sessions
+                function clearSessions() {
+                    fetch("{{ route('clear.sessions') }}", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                            },
+                            body: JSON.stringify({})
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
+                }
+
+                // Détecter l'actualisation de la page
+                window.addEventListener("beforeunload", function(event) {
+                    clearSessions();
+                });
+            </script>
+
         </section>
 
 
         <footer class="bg-white dark:bg-gray-900">
             <div class="container mx-auto px-6 py-12">
-                <div class="md:-mx-3 md:flex md:items-center md:justify-between">
-                    <h1
-                        class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white md:mx-3 xl:text-4xl">
-                        Subscribe our newsletter to get update.</h1>
 
-                    <div class="mt-6 shrink-0 md:mx-3 md:mt-0 md:w-auto">
-                        <a href="#"
-                            class="inline-flex w-full items-center justify-center rounded-lg bg-gray-800 px-4 py-2 text-sm text-white duration-300 hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-                            <span class="mx-2">Sign Up Now</span>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" class="mx-2 h-6 w-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
 
                 <hr class="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
 
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
-                    <div>
+                    {{-- <div>
                         <p class="font-semibold text-gray-800 dark:text-white">Quick Link</p>
 
                         <div class="mt-5 flex flex-col items-start space-y-2">
@@ -717,9 +802,6 @@
 
                         </div>
                     </div>
-
-
-
                     <div>
                         <p class="font-semibold text-gray-800 dark:text-white">Services</p>
 
@@ -741,14 +823,13 @@
                                 768 473 4978</a>
 
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
-                <hr class="my-6 border-gray-200 dark:border-gray-700 md:my-10" />
 
                 <div class="flex flex-col items-center justify-between sm:flex-row">
                     <a href="#"
-                        class="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">Brand</a>
+                        class="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">FAGC</a>
 
                     <p class="mt-4 text-sm text-gray-500 dark:text-gray-300 sm:mt-0">© Copyright 2024. All Rights
                         Reserved.</p>

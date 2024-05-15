@@ -17,17 +17,34 @@ use App\Http\Controllers\ExcelImportController;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
     
-    if (Route::currentRouteName() == 'submit') {
-        // Vider les sessions lorsque la route '/' est directement accédée
-        Session::forget('filtered_data');
-        Session::forget('filtered_localites');
-    }
-    $data = Medecin::paginate(10);
-    $localites = Medecin::select('localite')->distinct()->pluck('localite');
-    return view('welcome', compact('data','localites'));
+//     if (Route::currentRouteName() == 'submit') {
+//         // Vider les sessions lorsque la route '/' est directement accédée
+//         Session::forget('filtered_data');
+//         Session::forget('filtered_localites');
+//     }
+//     $data = Medecin::paginate(10);
+//     $localites = Medecin::select('localite')->distinct()->pluck('localite');
+//     return view('welcome', compact('data','localites'));
+// })->name('home')->middleware('clearSessionOnGet');
+
+
+Route::get('/', function () {
+   
+   
+        // Vérifiez si les sessions existent
+        $data = Session::get('filtered_data', Medecin::paginate(10));
+        $localites = Session::get('filtered_localites', Medecin::select('localite')->distinct()->pluck('localite'));
+    
+        return view('welcome', compact('data', 'localites'));
+   
 })->name('home');
+Route::post('/clear-sessions', function () {
+    Session::forget('filtered_data');
+    Session::forget('filtered_localites');
+    return response()->json(['status' => 'success']);
+})->name('clear.sessions');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

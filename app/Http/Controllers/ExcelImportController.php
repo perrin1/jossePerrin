@@ -55,7 +55,7 @@ class ExcelImportController extends Controller
 
         // Exécutez la requête pour obtenir les résultats
         $data = $query->paginate(10); // Vous pouvez ajuster la pagination en fonction de vos besoins
-        $data = $query->get(); // Vous pouvez ajuster la pagination en fonction de vos besoins
+        // $data = $query->get(); // Vous pouvez ajuster la pagination en fonction de vos besoins
 
         $localites = Medecin::select('localite')->distinct()->pluck('localite');
 
